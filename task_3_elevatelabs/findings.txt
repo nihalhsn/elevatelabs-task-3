@@ -1,0 +1,86 @@
+Vulnerability Scan Findings – Nessus Essentials
+Target: 192.168.56.1
+Scan Type: Basic Network Scan
+Date: 17 Nov 2025
+
+-------------------------------------------------
+SUMMARY OF FINDINGS
+-------------------------------------------------
+Critical: 0
+High: 0
+Medium: 2
+Low: 0
+Informational: 30
+Total: 32
+
+-------------------------------------------------
+MEDIUM SEVERITY VULNERABILITIES
+-------------------------------------------------
+
+1) SSL Certificate Cannot Be Trusted
+   - Plugin ID: 51192
+   - CVSSv3: 6.5
+   - Description:
+     The SSL certificate presented by the host cannot be fully trusted.
+     This may be due to self-signed certificates, expired certificates,
+     or certificates signed by untrusted authorities.
+   - Risk:
+     Connections to this host may be intercepted or spoofed.
+   - Remediation:
+     Install a valid SSL certificate signed by a trusted CA.
+
+2) SMB Signing Not Required
+   - Plugin ID: 57608
+   - CVSSv3: 5.3
+   - Description:
+     The remote SMB server does not require SMB signing.
+   - Risk:
+     Allows Man-in-the-Middle attacks on SMB connections.
+   - Remediation:
+     Enable SMB signing on the system or domain policy.
+
+-------------------------------------------------
+INFORMATIONAL FINDINGS (30 ITEMS)
+-------------------------------------------------
+
+1. Additional DNS Hostnames (46180)
+2. Common Platform Enumeration (CPE) (45590)
+3. DCE Services Enumeration (10736)
+4. Device Type Detection (54615)
+5. HTTP Server Type and Version (10107)
+6. Host Fully Qualified Domain Name (12053)
+7. HTTP Information Disclosure (24260)
+8. Microsoft Windows NTLMSSP Authentication Request Remote Network Name Disclosure (42410)
+9. Microsoft Windows SMB NativeLanManager Remote System Information Disclosure (10785)
+10. Microsoft Windows SMB Service Detection (11011)
+11. Microsoft Windows SMB Versions Supported (100871)
+12. Microsoft Windows SMB2 and SMB3 Dialects Supported (106716)
+13. Nessus Scan Information (19506)
+14. Nessus Server Detection (10147)
+15. Netstat Connection Information (64582)
+16. Netstat Portscanner (SSH) (14272)
+17. OS Fingerprints Detected (209654)
+18. OS Identification (11936)
+19. OS Identification and Installed Software Enumeration Over SSH v2 (97993)
+20. OS Security Patch Assessment Not Available (117886)
+21. SSL/TLS Versions Supported (56984)
+22. SSL Certificate Information (10863)
+23. SSL Cipher Suites Supported (21643)
+24. SSL Perfect Forward Secrecy Cipher Suites Supported (57041)
+25. Service Detection (22964)
+26. Strict Transport Security (STS) Detection (42822)
+27. TLS Version 1.2 Protocol Detection (136318)
+28. TLS Version 1.3 Protocol Detection (138330)
+29. Target Credential Status – No Credentials Provided (110723)
+30. Windows NetBIOS / SMB Remote Host Information Disclosure (10150)
+
+-------------------------------------------------
+CONCLUSION
+-------------------------------------------------
+The target system does not contain any critical or high-risk vulnerabilities.
+Two medium-severity issues were detected, relating to SSL certificate trust and
+SMB signing configuration. These should be addressed to improve security.
+
+The remaining findings are informational and provide additional details on
+system configuration, network services, protocol support, and OS identification.
+
