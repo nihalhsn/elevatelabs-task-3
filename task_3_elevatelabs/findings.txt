@@ -1,0 +1,50 @@
+Medium Vulnerabilities:
+1. SSL Certificate Cannot Be Trusted
+   - Plugin ID: 51192
+   - Severity: Medium
+   - Description: The SSL certificate presented by the host cannot be fully trusted.
+
+2. SMB Signing Not Required
+   - Plugin ID: 57608
+   - Severity: Medium
+   - Description: The remote SMB server does not require SMB signing, which could allow MITM attacks.
+
+
+Informational Findings (30 Items):
+1. Additional DNS Hostnames
+2. Common Platform Enumeration (CPE)
+3. DCE Services Enumeration
+4. Device Type Detection
+5. HTTP Server Type and Version
+6. Host Fully Qualified Domain Name (FQDN)
+7. HyperText Transfer Protocol (HTTP) Information
+8. Microsoft Windows NTLMSSP Authentication Request Remote Name Disclosure
+9. Microsoft Windows SMB NativeLanManager Remote System Information Disclosure
+10. Network Time Protocol (NTP) Information
+11. Operating System Identification
+12. Open Ports Enumeration
+13. Service Enumeration via Nessus
+14. Traceroute Information
+15. SSL Certificate Information
+16. TCP Timestamp Response
+17. ICMP Timestamp Response
+18. DNS Server Detection
+19. MAC Address Detection
+20. System Uptime
+21. Network Distance
+22. Supported Protocols Identification
+23. Host Start Time
+24. NetBIOS Name Detection
+25. NetBIOS MAC Address Detection
+26. Reverse DNS Lookup Findings
+27. SMB OS Discovery
+28. SMB Service Detection
+29. SMB Server Time
+30. General Network Information Disclosure
+
+Summary:
+- Critical: 0
+- High: 0
+- Medium: 2
+- Low: 0
+- Info: 30
